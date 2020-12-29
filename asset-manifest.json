@@ -1,12 +1,12 @@
 {
   "main.css": "/easyplace-public/static/css/main.758ec27e.chunk.css",
-  "main.js": "/easyplace-public/static/js/main.77194146.chunk.js",
-  "main.js.map": "/easyplace-public/static/js/main.77194146.chunk.js.map",
+  "main.js": "/easyplace-public/static/js/main.fb67358c.chunk.js",
+  "main.js.map": "/easyplace-public/static/js/main.fb67358c.chunk.js.map",
   "static/css/1.79763925.chunk.css": "/easyplace-public/static/css/1.79763925.chunk.css",
   "static/js/1.8ceeeeb7.chunk.js": "/easyplace-public/static/js/1.8ceeeeb7.chunk.js",
   "static/js/1.8ceeeeb7.chunk.js.map": "/easyplace-public/static/js/1.8ceeeeb7.chunk.js.map",
-  "static/js/2.b07b7700.chunk.js": "/easyplace-public/static/js/2.b07b7700.chunk.js",
-  "static/js/2.b07b7700.chunk.js.map": "/easyplace-public/static/js/2.b07b7700.chunk.js.map",
+  "static/js/2.9b0d1ef6.chunk.js": "/easyplace-public/static/js/2.9b0d1ef6.chunk.js",
+  "static/js/2.9b0d1ef6.chunk.js.map": "/easyplace-public/static/js/2.9b0d1ef6.chunk.js.map",
   "runtime~main.js": "/easyplace-public/static/js/runtime~main.df3ee37a.js",
   "runtime~main.js.map": "/easyplace-public/static/js/runtime~main.df3ee37a.js.map",
   "static/media/avatar.svg": "/easyplace-public/static/media/avatar.17bd5b3c.svg",
@@ -18,6 +18,6 @@
   "static/css/main.758ec27e.chunk.css.map": "/easyplace-public/static/css/main.758ec27e.chunk.css.map",
   "static/css/1.79763925.chunk.css.map": "/easyplace-public/static/css/1.79763925.chunk.css.map",
   "index.html": "/easyplace-public/index.html",
-  "precache-manifest.d6cb7776876b02eb9b8275f32c77a039.js": "/easyplace-public/precache-manifest.d6cb7776876b02eb9b8275f32c77a039.js",
+  "precache-manifest.95787956deb686281c1fb7aec000d389.js": "/easyplace-public/precache-manifest.95787956deb686281c1fb7aec000d389.js",
   "service-worker.js": "/easyplace-public/service-worker.js"
 }

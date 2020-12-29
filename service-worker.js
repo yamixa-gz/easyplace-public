@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/easyplace-public/precache-manifest.d6cb7776876b02eb9b8275f32c77a039.js"
+  "/easyplace-public/precache-manifest.95787956deb686281c1fb7aec000d389.js"
 );
 
 workbox.clientsClaim();
