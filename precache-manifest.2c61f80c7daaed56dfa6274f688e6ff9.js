@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fb67358c7f1d3f805c65",
+    "revision": "23f2699d2008fea2e027",
     "url": "/easyplace-public/static/css/main.758ec27e.chunk.css"
   },
   {
-    "revision": "fb67358c7f1d3f805c65",
-    "url": "/easyplace-public/static/js/main.fb67358c.chunk.js"
+    "revision": "23f2699d2008fea2e027",
+    "url": "/easyplace-public/static/js/main.23f2699d.chunk.js"
   },
   {
     "revision": "8ceeeeb7289296c2dcc8",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/easyplace-public/static/media/notRegistered.f5ac1466.svg"
   },
   {
-    "revision": "e8ca4c97afd86d4c106d60268c1a6860",
+    "revision": "5701cba73e83e797f3036fc08eb37308",
     "url": "/easyplace-public/index.html"
   }
 ];
