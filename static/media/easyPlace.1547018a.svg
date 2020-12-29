@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="609" height="87" viewBox="0 0 609 87">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 70.923px;
+        fill: #1771af;
+        font-family: Stencil;
+      }
+
+      .cls-2 {
+        fill: #588db3;
+      }
+    </style>
+  </defs>
+  <text id="easyPlace" class="cls-1" transform="translate(-4 85.318) scale(1.632 1.762)">easy<tspan class="cls-2">Place</tspan></text>
+</svg>
