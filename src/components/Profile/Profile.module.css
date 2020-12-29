@@ -1,0 +1,7 @@
+.profileWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    border:  2px solid #e2e7ec;
+    border-radius: 5px;
+}

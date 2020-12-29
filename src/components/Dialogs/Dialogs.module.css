@@ -1,0 +1,77 @@
+.dialogsWrapper {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+}
+.dialogsItems {
+    position: relative;
+    padding: 0px 10px 10px 10px;
+    color: white;
+}
+.dialogsItems:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    box-shadow: 0 0 2px #32393f;
+    /*background-color: #32393f;*/
+    border-radius: 2px;
+    border: #32393f 1px;
+    top: 0px;
+    right: 0px;
+}
+
+
+.dialogsItems .active {
+    color: gold;
+}
+
+.messagesWrapper {
+    padding: 0px 10px 10px 10px;
+    overflow: auto;
+}
+.messages {
+    margin-top: 15px;
+}
+
+/*.messages .message {*/
+/*    color: white;*/
+/*}*/
+.addPostMessage {
+
+}
+.textArea {
+    margin-top: 15px;
+    flex: 1 1 auto;
+}
+.addPost {
+    padding: 5px;
+    border:  2px solid #e2e7ec;
+    border-radius: 5px;
+}
+.addBtn {
+    margin-top: 5px;
+    padding:0px 8px 3px 8px;
+    position: relative;
+    width: 97px;
+    height: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.53);
+    text-align: left;
+    color: #e2e7ec;
+    border: 1px solid #2979c1;
+    background-color: #2d87c8;
+    background-image: linear-gradient(to top, #3d8fd7 0%, #76b2e5 100%);
+}
+.addBtn:hover {
+    background-image: none;
+
+}
+.addBtn img {
+    position: absolute;
+    display: block;
+    height: 14px;
+    width: 14px;
+    right: 5px;
+    top: 4px;
+}

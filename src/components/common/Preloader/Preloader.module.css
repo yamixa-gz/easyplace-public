@@ -1,0 +1,10 @@
+.loaderImg {
+    top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.loaderImg img {
+    display: inline-block;
+    margin: 0 auto;
+}

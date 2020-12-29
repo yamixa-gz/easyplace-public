@@ -1,0 +1,62 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+.formStyle {
+    display: flex;
+    position: fixed;
+    max-width: 500px;
+    /*height: 500px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    margin-left: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: rgba(117, 168, 208, 0.5) solid 1px;
+    box-shadow: 0 0 15px #3e4550;
+    background-color: #f9f9f9;
+}
+.insideModalLayer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    border: 2px solid #e2e7ec;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.textAreaWrapper {
+    margin-top: 5px;
+    flex: 1 1 auto;
+}
+.profileDataTextArea textarea {
+    padding: 3px;
+    border:  2px solid #e2e7ec;
+    border-radius: 5px;
+
+}
+.checkBoxWrapper input {
+    margin-top: 3px;
+}
+.btnWrapper {
+    padding: 10px 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.profileDataInput {
+    display: block;
+    padding: 0px 5px;
+    margin-top: 5px;
+    width: 170px;
+    height: 24px;
+    border: 1px solid #98a7b5;
+    background-color: #f9fbfc;
+    border-radius: 5px;
+    line-height: normal;
+}

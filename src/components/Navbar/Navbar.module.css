@@ -1,0 +1,63 @@
+.nav {
+    padding: 15px;
+    flex: 0 0 180px;
+    border-radius: 5px;
+    border: rgba(117, 168, 208, 0.5) solid 1px;
+    /*box-shadow: inset -1px 0 0 rgba(190, 200, 214, 0.78);*/
+    box-shadow: 0 0 15px #3e4550;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.08) 0%, rgba(2, 123, 224, 0.08) 100%);
+}
+
+.item {
+    position: relative;
+    width: 140px;
+    padding: 5px 5px 5px 30px;
+    box-shadow: -5px 0px 13px -7px #000000, 5px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    margin: 0px auto 10px auto;
+    text-align: left;
+    background-color: #e3ebf1;
+    border-radius: 5px;
+    border: #b0b9c1 1px solid;
+}
+.item a:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 12px;
+    left: 15px;
+    border: #b0b9c1 2px solid;
+    border-radius: 100%;
+
+
+}
+.item a{
+    color: #32393f;
+    text-decoration: none;
+    line-height: normal;
+}
+
+.item a.active {
+    color: #5ea3df;
+}
+.item a.active:before {
+    border: #3e90d7 2px solid;
+}
+.caption {
+    padding-bottom: 15px;
+    color: #5ea3df;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+.friends {
+    color: #5ea3df;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.friendsItems {
+
+}

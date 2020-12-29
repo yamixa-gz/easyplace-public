@@ -1,0 +1,158 @@
+.loginForm {
+    /*padding: 0px 10px;*/
+    width: 200px;
+}
+.captchaError {
+    /*border:  2px solid #d70113;*/
+    /*border-radius: 5px;*/
+    /*padding: 1px;*/
+    /*height: 255px;*/
+}
+.inputs {
+    display: flex;
+    position: relative;
+}
+.inputs.authError {
+    border:  2px solid #d70113;
+    border-radius: 5px;
+    padding: 1px;
+}
+.displayNone {
+    display: none;
+}
+/*.authErrorMessage.authError {*/
+/*    display: block;*/
+/*}*/
+.authErrorMessage {
+    display: block;
+    /*display: none;*/
+    text-align: center;
+    color: #FFFF;
+    padding: 5px;
+    position: absolute;
+    background: #C03737;
+    border: 1px solid #000000;
+    min-width: 150px;
+    min-height: 30px;
+    border-radius: 5px;
+    right: 205px;
+    z-index: 10;
+}
+.authErrorMessage:after, .bar:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 50%;
+}
+.authErrorMessage:before {
+    right: -8px;
+    margin-top: -8px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #000000;
+}
+.authErrorMessage:after {
+    right: -7px;
+    margin-top: -7px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #C03737;
+}
+.loginInput { /* for export to FormControls.js via 'className' */
+    padding: 0px 5px;
+    width: 90px;
+    height: 24px;
+    border: 1px solid #98a7b5;
+    background-color: #f9fbfc;
+    border-radius: 5px;
+    line-height: normal;
+}
+.wrapLogin {
+    margin-right: 10px;
+}
+.wrapPass {
+
+}
+.rememberMe {
+    margin-top: 5px;
+}
+.rememberMe span{
+    margin-left: 5px;
+}
+.regAndSignIn {
+    display: flex;
+    align-items: flex-end;
+}
+.loginBtn {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    width: 54px;
+    height: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.53);
+    border: 1px solid #2979c1;
+    background-color: #eff1f5;
+    background-image: linear-gradient(to top, #3d8fd7 0%, #76b2e5 100%);
+}
+.loginBtn:hover {
+    color: #ffffff;
+    background-image: none;
+    background-color: #76b2e5;
+}
+.regAndPassLinks {
+    font-size: 12px;
+    text-decoration: underline;
+}
+.regLink,.fogPassLink {
+    color: #3492e3;
+    line-height: normal;
+}
+.loginRedNoticeError span {
+    position: absolute;
+    background-color: #e2e7ec;
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 3px;
+    left: -3px;
+    top: 25px;
+    border:  1px solid #d70113;
+}
+.captchaField {
+    position: absolute;
+    opacity: 1;
+    width: 200px;
+    height: 100px;
+    transition: 0.5s all;
+    margin: 10px auto 0 auto;
+    z-index: 2000;
+}
+.captchaRedFrame {
+    border:  2px solid #d70113;
+    border-radius: 5px;
+    padding: 0px 2px 3px 2px;
+}
+.captchaFieldTitle {
+    margin: 3px 0px;
+    border: 1px solid #98a7b5;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #e2e7ec;
+    color: #8b010d;
+}
+/*.captchaField.visible {*/
+/*    opacity: 1;*/
+/*}*/
+.captchaField img {
+    /*display: block;*/
+    border: 1px solid #98a7b5;
+    width: 100%;
+    border-radius: 5px;
+}
+.captchaField input {
+    display: block;
+    margin: 3px auto 0 auto;
+    width: 100%;
+}

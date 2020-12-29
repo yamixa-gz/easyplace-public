@@ -1,0 +1,43 @@
+.pageItems {
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+.pageItem {
+    position: relative;
+    display: inline-block;
+    top: -3px;
+    height: 26px;
+    /*width: 26px;*/
+    border-radius: 3px;
+    padding: 5px 3px 0px 3px;
+    color: #2f81c9;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0px 2px;
+}
+.pageItem.active {
+    background-color: #6eade3;
+    text-decoration: none;
+    color: #ffffff;
+}
+.rightArrow, .leftArrow {
+    display: inline-block;
+    height: 20px;
+    width: 15px;
+    cursor: pointer;
+}
+.rightArrow {
+    background-image: url("../../../assets/img/rightArrow.svg");
+    margin-left: 15px;
+}
+.leftArrow {
+    background-image: url("../../../assets/img/leftArrow.svg");
+    margin-right: 15px;
+}
+/*.leftArrow,.rightArrow :hover {*/
+/*    border-radius: 5px;*/
+/*    background-color: #76b2e5;*/
+/*}*/

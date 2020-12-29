@@ -1,0 +1,55 @@
+.header {
+    height: 105px;
+    background-color: #fff;
+    z-index: 1;
+}
+.headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.header .logo {
+    max-width: 255px;
+    margin-right: 20px;
+}
+.header .logo img{
+    max-width: 100%;
+}
+.info {
+    overflow: hidden;
+    padding: 5px;
+    max-width: 478px;
+    height: 70px;
+    border: 1px solid #e8edf1;
+    flex: 1 1 auto;
+    margin-right: 20px;
+}
+.infoInside {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e3ebf1;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+.infoInside img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+.headerFrontArr {
+   z-index: 2;
+    position: absolute;
+}
+.wrapInfoLogo {
+    display: flex;
+    /*max-width: 750px;*/
+    /*height: 90px;*/
+}
+.loginForm {
+
+}

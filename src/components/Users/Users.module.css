@@ -1,0 +1,32 @@
+
+.usersWrapper {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+}
+.messagesWrapper {
+    position: relative;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.addButton  {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding:0px 8px 3px 8px;
+    width: 175px;
+    height: 35px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.53);
+    text-align: center;
+    color: #e2e7ec;
+    font-size: 18px;
+    border: 1px solid #2979c1;
+    background-color: #2d87c8;
+    border-radius: 3px;
+    background-image: linear-gradient(to top, #3d8fd7 0%, #76b2e5 100%);
+}
+.addButton:hover  {
+    background-image: none;
+
+}

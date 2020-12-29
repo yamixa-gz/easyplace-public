@@ -1,0 +1,13 @@
+input.redFrameError, textarea.redFrameError {
+    border:  2px solid #d70113;
+}
+.validateWrapper {
+    position: relative;
+}
+span.hiddenRedNotice {
+    display: none;
+}
+span.redNoticeError {
+    display: inline-block;
+    color: #d70113;
+}

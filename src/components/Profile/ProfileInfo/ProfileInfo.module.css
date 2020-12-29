@@ -1,0 +1,92 @@
+.profileInfoBtn {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+    font: 14px/26px Tahoma;
+    transition: all 0.18s ease-in-out;
+    border: 1px solid #4fabd6;
+    background: linear-gradient(to top right, #3193cb, #55dbe7 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
+    /*background: linear-gradient(to top right, #70aac7, #91d5de 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;*/
+    color: #4fabd6;
+}
+.profileInfoBtn:hover {
+    color: white;
+    background-position: bottom left;
+    opacity: 1;
+}
+.profileInfoBtn:active {
+    transition: none;
+    background: #3193cb
+}
+.profileInfo {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    /*padding: 10px;*/
+    /*border:  2px solid #e2e7ec;*/
+    /*border-radius: 5px;*/
+    overflow: hidden;
+}
+.contactTitle {
+    margin-left: 10px;
+}
+.contacts {
+
+}
+.contactsCaption {
+    margin-top: 15px;
+    color: #5ea3df;
+    font-size: 16px;
+    font-weight: 500;
+}
+.changeProfileData {
+    top: 5px;
+    right: 5px;
+    /*z-index: 10;*/
+}
+.userAvatar {
+    width: 200px;
+    margin: 10px;
+    overflow: hidden;
+}
+.userAvatar img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+.infoStrings {
+    /*position: relative;*/
+    /*overflow: hidden;*/
+}
+.infoStringsItem {
+    color: #325b79;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    /*line-height: 31px;*/
+}
+.infoStringsItem:first-child {
+    margin-top: 10px;
+}
+.fileInput.invisible {
+    opacity: 0;
+}
+.fileInput {
+    top: 8px;
+    left: 8px;
+}
+.fileInput:hover {
+    opacity: 1;
+}
+.my {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}

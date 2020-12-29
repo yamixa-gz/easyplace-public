@@ -1,0 +1,21 @@
+.statusBlock {
+    margin-top: 10px;
+
+}
+.avatarSpanText {
+
+}
+.avatarSpanText span {
+    color: #374048;
+    font-size: 16px;
+    font-weight: 400;
+}
+.avatarEditText {
+
+}
+.avatarEditText input {
+    border: 2px solid #e2e7ec;
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 5px;
+}

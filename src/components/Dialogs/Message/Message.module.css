@@ -1,0 +1,89 @@
+.message {
+    display: flex;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.message:first-child {
+    margin-top: 0px;
+}
+.userMessage {
+    width: 300px;
+    padding: 15px 10px;
+    position: relative;
+    background: #f4f7f9;
+    border: 1px solid #cfdee7;
+    border-radius: 5px;
+}
+.userMessage:after, .userMessage:before {
+    content: "";
+    border: solid transparent;
+    position: absolute;
+    right: 100%;
+    top: 8px;
+}
+.userMessage:after {
+    border-right-color: #f4f7f9;
+    border-width: 8px;
+    margin-top: 0;
+}
+.userMessage:before {
+    border-right-color: #cfdee7;
+    border-width: 9px;
+    margin-top: -1px;
+
+}
+.messageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.nickAndDate {
+    display: flex;
+}
+.messageNick {
+    margin-right: 8px;
+    color: #2f81c9;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.messageDate {
+    color: #6c879f;
+    font-size: 13px;
+    margin-right: 5px;
+}
+.messageNumber {
+    position: relative;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    height: 22px;
+    background-color: #6eade3;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    flex: 0 1 22px;
+}
+.messageText{
+    color: #374048;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.messageNavigation {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.messageNavigation a {
+    color: #2f81c9;
+}
+.messageLinkDelete {
+    margin-right: 15px;
+}
+.messageLinkEdit {
+    margin-right: 5px;
+}
