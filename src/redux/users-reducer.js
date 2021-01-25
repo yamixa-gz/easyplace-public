@@ -3,7 +3,7 @@ import {usersAPI} from '../api/api'
 let initialState = {
     users: [  ],
     pagesCount: 1,
-    currentPage: 3,
+    currentPage: 1,
     totalUsersCount: 20,
     pageSize: 5,
     isFetching: false,
@@ -106,7 +106,6 @@ export const requestUsers = (page, pageSize) =>
         dispatch(toggleIsFetching(true))
 
         usersAPI.getUsers(page, pageSize).then(data => {
-            console.log(data);
             dispatch(toggleIsFetching(false))
             dispatch(setCurrentPage(page))
             dispatch(setUsers(data.items))
