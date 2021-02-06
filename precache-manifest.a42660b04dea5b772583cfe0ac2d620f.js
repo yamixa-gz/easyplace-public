@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "23f2699d2008fea2e027",
-    "url": "/easyplace-public/static/css/main.758ec27e.chunk.css"
+    "revision": "b99e728257e5162ef55b",
+    "url": "/easyplace-public/static/css/main.95726416.chunk.css"
   },
   {
-    "revision": "23f2699d2008fea2e027",
-    "url": "/easyplace-public/static/js/main.23f2699d.chunk.js"
+    "revision": "b99e728257e5162ef55b",
+    "url": "/easyplace-public/static/js/main.b99e7282.chunk.js"
   },
   {
-    "revision": "8ceeeeb7289296c2dcc8",
-    "url": "/easyplace-public/static/css/1.79763925.chunk.css"
+    "revision": "6cd254a180c643f80cb6",
+    "url": "/easyplace-public/static/css/1.a4e0219a.chunk.css"
   },
   {
-    "revision": "8ceeeeb7289296c2dcc8",
-    "url": "/easyplace-public/static/js/1.8ceeeeb7.chunk.js"
+    "revision": "6cd254a180c643f80cb6",
+    "url": "/easyplace-public/static/js/1.6cd254a1.chunk.js"
   },
   {
-    "revision": "9b0d1ef6534846360731",
-    "url": "/easyplace-public/static/js/2.9b0d1ef6.chunk.js"
+    "revision": "c93c5b271028f0752430",
+    "url": "/easyplace-public/static/js/2.c93c5b27.chunk.js"
   },
   {
-    "revision": "df3ee37a0d6a0e4193d0",
-    "url": "/easyplace-public/static/js/runtime~main.df3ee37a.js"
+    "revision": "f9eb3966d97d21924e04",
+    "url": "/easyplace-public/static/js/runtime~main.f9eb3966.js"
   },
   {
     "revision": "17bd5b3cfb58fe64a0a48dd97d1ba4b5",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/easyplace-public/static/media/notRegistered.f5ac1466.svg"
   },
   {
-    "revision": "5701cba73e83e797f3036fc08eb37308",
+    "revision": "7eb362f19a8c0a97eb60cbabbfc7ea14",
     "url": "/easyplace-public/index.html"
   }
 ];
