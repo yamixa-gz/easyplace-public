@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import s from './LoginForm.module.css'
 import {Field, reduxForm} from 'redux-form'
-import {Input} from '../../common/FormControls/FormControls'
+import {customInput} from '../../common/FormControls/FormControls'
 import {maxLength, required} from '../../../utils/validators/validators'
 import {connect} from 'react-redux'
 import {login} from '../../../redux/auth-reduser'
@@ -17,14 +17,16 @@ let LoginForm = ({ handleSubmit, error, captchaUrl }) => {
                     </div>}
                     <div className={`${s.wrapLogin} ${s.loginRedNoticeError}`}>
                         <label htmlFor='name'>Логин:</label> <br/>
-                        <Field component={Input}
+                        <Field component={customInput}
+                               componentType='input'
                                className={s.loginInput}
                                validate={[required, maxLength15]}
                                type='text' name='email'/>
                     </div>
                     <div className={`${s.wrapPass} ${s.loginRedNoticeError}`}>
                         <label htmlFor='pass'>Пароль:</label> <br/>
-                        <Field component={Input}
+                        <Field component={customInput}
+                               componentType='input'
                                className={s.loginInput}
                                validate={[required, maxLength15]}
                                type='password' name='password'/>
@@ -45,7 +47,8 @@ let LoginForm = ({ handleSubmit, error, captchaUrl }) => {
                     <div className={s.captchaRedFrame}>
                         <div className={s.captchaFieldTitle}>Введите код с картинки:</div>
                         <img src={captchaUrl} alt='))'/>
-                        <Field component={Input}
+                        <Field component={customInput}
+                               componentType='input'
                                className={s.loginInput}
                                validate={[required, maxLength15]}
                                type='text' name='captcha'/>

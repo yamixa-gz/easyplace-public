@@ -1,29 +1,27 @@
 import React from 'react'
 import s from './FormControls.module.css'
+import cn from 'classnames'
 
-export const Textarea = ({input, meta, className, ...props}) => {
-    let isError = meta.touched && meta.error
-    return <div className={s.validateWrapper}>
-            <textarea {...input} {...props}
-                      className={
-                          `${className} ${(isError && s.redFrameError)}`
-                      }/> <br/>
-        <span className={`${s.hiddenRedNotice} ${(isError && s.redNoticeError)}`}>
-            {meta.error}
-        </span>
-    </div>
+const setErrorFrame = (isError, className = '') => {
+  return cn(className, {
+    [s.redFrameError]: isError
+  })
+}
+const setErrorNotice = (isError) => {
+  return cn(s.hiddenRedNotice, {
+    [s.redNoticeError]: isError
+  })
 }
 
-export const Input = ({input, meta, className, ...props}) => {
-    const isError = meta.touched && meta.error
-// debugger
-    return <div className={s.validateWrapper}>
-        <input {...input} {...props}
-               className={
-                   `${className} ${(isError && s.redFrameError)}`
-               }/>
-        <span className={`${s.hiddenRedNotice} ${(isError && s.redNoticeError)}`}>
-            &nbsp;{meta.error}
-        </span>
-    </div>
+export const customInput = ({input, meta, className, componentType, ...props}) => {
+  const isError = meta.touched && meta.error
+  return <div className={s.validateWrapper}>
+    {componentType === 'textarea'
+        ?
+        <><textarea {...input} {...props} className={setErrorFrame(isError, className)}/> <br/></>
+        : componentType === 'input'
+            ? <input {...input} {...props} className={setErrorFrame(isError, className)}/>
+            : ''}
+    <span className={setErrorNotice(isError)}>&nbsp;{meta.error} </span>
+  </div>
 }

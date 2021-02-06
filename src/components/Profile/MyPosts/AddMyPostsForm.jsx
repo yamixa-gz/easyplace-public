@@ -2,14 +2,15 @@ import React from 'react'
 import s from './MyPosts.module.css'
 import {Field, reduxForm} from 'redux-form'
 import addBtnImg from '../../../assets/img/addBtnImg.svg'
-import {Textarea} from '../../common/FormControls/FormControls'
+import {customInput} from '../../common/FormControls/FormControls'
 import {maxLength, required} from '../../../utils/validators/validators'
 
 const maxLength15 = maxLength(15)
 let AddMyPostsForm = ({ handleSubmit }) => {
     return <form onSubmit={handleSubmit}>
         <div className={s.textArea}>
-            <Field component={Textarea}
+            <Field component={customInput}
+                   componentType='textarea'
                    validate={[maxLength15, required]}
                    className={s.addPost}
                    name='newMyPostsText'

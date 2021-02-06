@@ -15,38 +15,40 @@ import withSuspense from './HOC/withSuspense'
 
 // const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'))
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'))
-class App extends React.Component<{}> {
-    render() {
-        this.props.initializeApp()
 
-        if ( !this.props.initialized ) {
-            return  <Preloader />
-        }
-        return (
-            <div className='app-wrapper'>
-                <HeaderContainer/>
-                <div className='app-wrapper-content'>
-                    <div className='container'>
-                        <div className='content'>
-                            <Navbar/>
-                            <div className='contentLayout'>
-                                <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
-                                <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)}/>
-                                <Route path='/users' render={withSuspense(UsersContainer)}/>
-                                <Route path='/login' render={withSuspense(LoginPage)}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
+class App extends React.Component<{}> {
+  render() {
+    this.props.initializeApp()
+
+    if (!this.props.initialized) {
+      return <Preloader/>
     }
+    return (
+        <div className='app-wrapper'>
+          <HeaderContainer/>
+          <div className='app-wrapper-content'>
+            <div className='container'>
+              <div className='content'>
+                <Navbar/>
+                <div className='contentLayout'>
+                  <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
+                  <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)}/>
+                  <Route path='/users' render={withSuspense(UsersContainer)}/>
+                  <Route path='/login' render={withSuspense(LoginPage)}/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    )
+  }
 }
+
 const mapStateToProps = (state) => ({
-    initialized: state.app.initialized
+  initialized: state.app.initialized
 })
 
 export default compose(
     withRouter,
     connect(mapStateToProps, {initializeApp})
-) (App)
+)(App)

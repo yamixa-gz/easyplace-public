@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 import s from '../ProfileInfo/ProfileInfo.module.css'
 import formStyle from './ProfileDataForm.module.css'
 import {Field, reduxForm} from 'redux-form'
-import {Input, Textarea} from '../../common/FormControls/FormControls'
+import {customInput} from '../../common/FormControls/FormControls'
 import {connect} from 'react-redux'
 import {saveProfile, toggleEditMode} from '../../../redux/profile-reduser'
 import {maxLength, required} from '../../../utils/validators/validators'
@@ -30,21 +30,24 @@ let ProfileDataForm = ({profile, children, editMode, toggleEditMode, handleSubmi
                 <div className={formStyle.insideModalLayer}>
                     <div className={s.infoStrings}>
                         <div className={s.infoStringsItem}>Имя:
-                            <Field component={Input}
+                            <Field component={customInput}
+                                   componentType='input'
                                    className={formStyle.profileDataInput}
                                    validate={[required, maxLength30]}
                                    type='text' name='fullName'/>
                         </div>
 
                         <div className={`${s.infoStringsItem} ${formStyle.checkBoxWrapper}`}>Ищу работу:
-                            <Field component={Input}
+                            <Field component={customInput}
+                                   componentType='input'
                                    type='checkbox' name='lookingForAJob'/>
                         </div>
                     </div>
 
                     <div className={s.infoStringsItem}>Хочу работать:
                         <div className={`${formStyle.textAreaWrapper} ${formStyle.profileDataTextArea}`}>
-                            <Field component={Textarea}
+                            <Field component={customInput}
+                                   componentType='textarea'
                                    validate={[maxLength100, required]}
                                    name='lookingForAJobDescription'
                                    rows='2' cols='50'/>
@@ -52,7 +55,8 @@ let ProfileDataForm = ({profile, children, editMode, toggleEditMode, handleSubmi
                     </div>
                     <div className={s.infoStringsItem}>Обо мне:
                         <div className={`${formStyle.textAreaWrapper} ${formStyle.profileDataTextArea}`}>
-                            <Field component={Textarea}
+                            <Field component={customInput}
+                                   componentType='textarea'
                                    validate={[maxLength100, required]}
                                    name='aboutMe'
                                    rows='2' cols='50'/>
@@ -62,7 +66,8 @@ let ProfileDataForm = ({profile, children, editMode, toggleEditMode, handleSubmi
                         <div className={s.contactsCaption}>Контакты:</div>
                         {Object.keys(profile.contacts).map(key => {
                             return <div key={key} className={s.infoStringsItem}> {key}
-                                <Field component={Input}
+                                <Field component={customInput}
+                                       componentType='input'
                                        className={formStyle.profileDataInput}
                                        validate={[maxLength30]}
                                        type='text' name={`contacts.${key}`}/>
